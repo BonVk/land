@@ -1,0 +1,172 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F8FCFF;
+    max-width: 1440px;
+    height: 100vh;
+    padding: 40px 98px 0 140px;
+    margin: 0;
+}
+header {
+    height: 50px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header__logo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 15px;
+    width: 83px;
+    background-image:url(../land/images/besnik.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0 auto;
+}
+.cart {
+    height: 50px;
+    width: 50px;
+    background-image:url(../land/images/group.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+.preview {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.text__information{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url(../land/images/ellipse.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 110%;
+}
+.order__card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    cursor: pointer;
+
+}
+.arrow__order{
+    width: 50px;
+    height: 50px;
+    background-image: url(../land/images/icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+    margin-right: 8px;
+}
+.preview__card {
+    height: 100%;
+    width: 60%;
+    background-image:url(hppt://localhost/land/images/headercard.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 85% 117%;
+}
+.triggers {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px 0;
+}
+.trigger__item {
+    max-width: 18%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item__icon {
+    width: 32px;
+    height: 35px;
+    background-image: url(../images/image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 25px;
+}
+.trigger__item1 {
+    display: flex;
+}
+.item__icon1 {
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/fire.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 8px;
+}
+.modal__container {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.modal__container.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff73;
+}
+.modal {
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    max-width: 500px;
+    max-height: 400px;
+    background-color: white;
+    box-shadow: 0 0 50px -10px black;
+}
+.modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal h2 {
+    margin-bottom: 20px;
+}
+.modal input[type="text"] {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    height: 50px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.modal input[type="submit"] {
+    border: none;
+    box-shadow: 0 0 4px -2px black;
+    border-radius: 8px;
+    padding: 16px;
+    background: white;
+    outline: none;
+    height: 50px;
+    margin-top: 15px;
+}
+@media screen and (max-device-width: 1200px) { 
+    body {
+        padding: 40px 0px;
+        margin: 0;}
+} 
